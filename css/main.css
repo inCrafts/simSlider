@@ -1,0 +1,105 @@
+/*font-family: 'Dancing Script', cursive;*/
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #000000;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slide {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.slide__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.controls {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.controls__list {
+	position: absolute;
+	top: 50%;
+	right: 40px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin: 0;
+	padding: 0;
+}
+
+.controls__item {
+	list-style: none;	
+}
+
+.controls__link {
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin: 10px 0;
+	background: #ffffff;
+	border-radius: 50%;
+	opacity: .8;
+}
+
+.controls__link:hover {
+	opacity: 1;
+}
+
+.content {
+	padding: 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content__heading {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	font-family: 'Poller One', cursive;
+}
+
+.content__text {
+	font-size: 1.4em;
+	font-family: 'Dancing Script', cursive;
+}
